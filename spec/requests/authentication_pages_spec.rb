@@ -97,8 +97,8 @@ describe "Authentication" do
         end
 
         describe "submitting to the destory action" do
-          before { delete relationships_path(1) }
-          specify { respose.should redirect_to(signin_path) }
+          before { delete relationship_path(1) }
+          specify { response.should redirect_to(signin_path) }
         end
       end
     end
